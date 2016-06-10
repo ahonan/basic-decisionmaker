@@ -1,0 +1,46 @@
+a:link{
+    color:black;
+    text-decoration:none;
+}
+#header_2:hover,#header_3:hover{
+    opacity:.6;
+}
+body{
+    font-family:"Times New Roman", Times, serif;
+    color:black;
+    background: #10586b;
+    word-wrap: break-word;
+    margin:20px;
+}
+.main{
+    background-color:#fff;
+    height:1000px;
+    max-height:100%;
+    width:1000px;
+    max-width:100%;
+    margin:auto;
+    padding:50px;
+}
+.site-header{
+    margin:auto;
+    margin-bottom:10px;
+}
+#header_1{
+    font-size:50px;
+    float:left;
+}
+#header_2, #header_3{
+    list-style-type:none;
+    color: black;
+    float:right;
+    display:inline;
+    font-size:30px;
+}
+#header_3{
+    margin-right:50px;
+}
+#hr{
+    border:1px solid black;
+    clear:both;
+    margin-bottom:50px;
+}
