@@ -13,6 +13,27 @@
                 </nav>
             </header>
             <div id="hr"></div>
+    <div class="input">
+        <p id="prompt1">
+		<input id="option1" placeholder="First option"></input>
+		</p>
+		<p id="prompt2">
+		<input id="option2" placeholder="Second option"></input>
+		</p>
+		<div id="decide"><button onClick="myFunction()" id="button">Make a Decision</button></div>
+	</div>
+		<script>
+function myFunction(){	
+var choice1 = document.getElementById('option1').value
+var choice2 = document.getElementById('option2').value
+var random = Math.floor(Math.random()*100 + 1)
+if(random >= 51){
+    confirm("You should choose " + choice1 + ".")
+}else{
+    confirm("You should choose " + choice2 + ".")
+}
+}
+</script>
         </div>
     </body>
 </html>
