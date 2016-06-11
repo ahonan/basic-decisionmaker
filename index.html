@@ -15,10 +15,10 @@
             <div id="hr"></div>
     <div class="input">
         <p id="prompt1">
-		<input id="option1" placeholder="First option"></input>
+		<input id="option1" placeholder="First option" onkeydown = "if (event.keyCode == 13) document.getElementById('button').click()"></input>
 		</p>
 		<p id="prompt2">
-		<input id="option2" placeholder="Second option"></input>
+		<input id="option2" placeholder="Second option" onkeydown = "if (event.keyCode == 13) document.getElementById('button').click()"></input>
 		</p>
 		<div id="decide"><button onClick="myFunction()" id="button">Make a Decision</button></div>
 	</div>
