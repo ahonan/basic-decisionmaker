@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="https://goo.gl/hL9XZ4"></script>
     <title>Basic Decision Maker</title>
-    <head><link rel="icon" href="http://icons.iconarchive.com/icons/artua/mac/512/Setting-icon.png"></link></head>
     <body>
         <div class="main">
-            <header class="site-header">
-                    <div id="header_1">Basic Decision Maker</div>
-                <nav class="site-nav">
-                    <a href="/decisionmaker/"><div id="header_2">Decision Maker</div></a>
-                    <a href="/home/"><div id="header_3">Home</div></a>
-                </nav>
-            </header>
-            <div id="hr"></div>
-    <div class="input">
-        <p id="prompt1">
-		<input id="option1" placeholder="First option" onkeydown = "if (event.keyCode == 13) document.getElementById('button').click()"></input>
-		</p>
-		<p id="prompt2">
-		<input id="option2" placeholder="Second option" onkeydown = "if (event.keyCode == 13) document.getElementById('button').click()"></input>
-		</p>
-		<div id="decide"><button onClick="myFunction()" id="button">Make a Decision</button></div>
-	</div>
-		<script>
-function myFunction(){	
-var choice1 = document.getElementById('option1').value
-var choice2 = document.getElementById('option2').value
-var random = Math.floor(Math.random()*100 + 1)
-if(random >= 51){
-    confirm("You should choose " + choice1 + ".")
-}else{
-    confirm("You should choose " + choice2 + ".")
-}
-}
-</script>
+            <div id="menu-icon">
+                <img src="https://goo.gl/Ri13YJ">
+            </div>
+            <div class="input">
+                <ul class="list">
+                    <li class="vis" id="prompt1"><input id="option1" placeholder="First option"></input></li>
+		            <li class="vis active-prompt" id="prompt2"><input id="option2" placeholder="Second option"></input></li>
+		            <li class="invis" id="prompt3"><input id="option3" placeholder="Third option"></input></li>
+		            <li class="invis" id="prompt4"><input id="option4" placeholder="Fourth option"></input></li>
+		            <li class="invis" id="prompt5"><input id="option5" placeholder="Fifth option"></input></li>
+		            <li class="invis" id="prompt6"><input id="option6" placeholder="Sixth option"></input></li>
+		            <li class="invis" id="prompt7"><input id="option7" placeholder="Seventh option"></input></li>
+		            <li class="invis" id="prompt8"><input id="option8" placeholder="Eighth option"></input></li>
+		            <li class="invis" id="prompt9"><input id="option9" placeholder="Ninth option"></input></li>
+		            <li class="invis" id="prompt10"><input id="option10" placeholder="Tenth option"></input></li>
+                </ul>
+		        <div class="addDelete">
+		            <div class="plus"><button id="plus"><img src="https://goo.gl/wYpa2Z"></button></div>
+		            <div class="minus"><button id="minus"><img src="https://goo.gl/OovWfl"></button></div>
+	            </div>
+		        <div class="decide"><button class="button">Make a Decision</button></div>
+	            <p id='text'>If nothing happens when you press the button, try refreshing your browser.<br>
+	            If this does not fix the problem, please make sure you are not blocking pop-ups.</p>
+	        </div>
         </div>
+        <div class="nav">
+            <ul id="main-list">
+                <a href="/home/"><li>Home</li></a>
+                <a href="#"><li>
+                    <div class="dropdown">Decision Makers<div id='caret' class='caret-down'></div></div>
+                    <ul class="sub-nav">
+                        <a href="/basic-decisionmaker/"><li>Basic Decision Maker</li></a>
+                        <a href="/decisionmaker/"><li id="cdm">Custom Decision Maker</li></a>
+                    </ul>
+                </li></a>
+                <a href="#"><li>Test</li></a> 
+        </div>
+        <script src="site.js"></script>
     </body>
 </html>
